@@ -1,0 +1,718 @@
+{
+  "project": "OpenResearch AI",
+  "model": "qwen3:4b-instruct",
+  "evidence_records": {
+    "S001_chunk_1": {
+      "source_id": "S001",
+      "chunk_id": "S001_chunk_1",
+      "evidence_origin": "AI-generated analysis of extracted source content",
+      "extracted_at": "2026-11-18T14:26:51",
+      "main_findings": [
+        "The extract introduces a high-level overview of machine learning concepts as applied to astronomy, with a focus on generative and discriminative modeling.",
+        "It distinguishes between generative and discriminative modeling, explaining their mathematical foundations using Bayes’ rule.",
+        "It illustrates how these models are applied in astronomy, particularly in exoplanet detection algorithms.",
+        "It presents examples of ML techniques such as Principal Components Analysis (PCA), Probabilistic PCA (PPCA), and Support Vector Machines (SVMs), showing their use in data modeling and classification.",
+        "A detour is made to discuss deep neural networks in natural image classification, though this is not directly applied to astronomy in the extract."
+      ],
+      "methods_and_technologies": [
+        "Generative modeling using a model of data density (e.g., Gaussian model) to estimate likelihood",
+        "Principal Components Analysis (PCA)",
+        "Probabilistic PCA (PPCA)",
+        "Support Vector Machines (SVMs)"
+      ],
+      "datasets": [],
+      "limitations": [],
+      "author_reported_gaps": [],
+      "possible_inferred_gaps": [],
+      "uncertainties": []
+    },
+    "S001_chunk_2": {
+      "source_id": "S001",
+      "chunk_id": "S001_chunk_2",
+      "evidence_origin": "AI-generated analysis of extracted source content",
+      "extracted_at": "2026-11-18T14:27:24",
+      "main_findings": [
+        "Machine learning in astronomy and computer vision relies on three key components: discriminative neural network models (supervised training), large labeled datasets, and substantial computational resources.",
+        "Convolutional Neural Networks (CNNs) are highlighted as effective models for image recognition, with historical roots in LeCun et al. (1989).",
+        "Performance improvements in image classification are demonstrated through the use of large datasets like ImageNet and powerful hardware such as GPUs.",
+        "CNNs have been successfully applied beyond images to domains like medical imaging, speech spectrograms, and particle physics traces.",
+        "Natural language processing benefits from recurrent neural networks, though both require large labeled datasets.",
+        "Crowd-sourced labeling efforts, such as Galaxy Zoo, are used to generate labeled data for galaxy morphology classification."
+      ],
+      "methods_and_technologies": [
+        "Convolutional"
+      ],
+      "datasets": [
+        "ImageNet",
+        "Galaxy Zoo"
+      ],
+      "limitations": [],
+      "author_reported_gaps": [],
+      "possible_inferred_gaps": [],
+      "uncertainties": []
+    },
+    "S001_chunk_3": {
+      "source_id": "S001",
+      "chunk_id": "S001_chunk_3",
+      "evidence_origin": "AI-generated analysis of extracted source content",
+      "extracted_at": "2026-11-18T14:27:56",
+      "main_findings": [
+        "Machine learning is used for galaxy morphology classification, with convolutional neural networks (ConvNets) trained on Galaxy Zoo data achieving human-level performance.",
+        "The S4 algorithm uses machine learning to detect exoplanets in high-contrast astronomical images by exploiting the difference between speckles (diffraction artifacts) and stationary planets.",
+        "The method relies on polar representation to separate speckles (diagonal structures) from planets (vertical structures).",
+        "Three versions of S4 are presented: S4 Detect (PCA-based), DS4 Detect (SVM-based), and S4 Spectra (spectra estimation), all using the same data representation but different machine learning approaches.",
+        "A leave-out strategy is used to train and test models by separating data slices within annuli and training models per location."
+      ],
+      "methods_and_technologies": [],
+      "datasets": [
+        "Galaxy Zoo data",
+        "high-contrast astronomical images"
+      ],
+      "limitations": [],
+      "author_reported_gaps": [],
+      "possible_inferred_gaps": [],
+      "uncertainties": []
+    },
+    "S001_chunk_4": {
+      "source_id": "S001",
+      "chunk_id": "S001_chunk_4",
+      "evidence_origin": "AI-generated analysis of extracted source content",
+      "extracted_at": "2026-11-18T14:28:39",
+      "main_findings": [
+        "The document compares two machine learning approaches (S4 Detect and DS4) for detecting exoplanets in astronomical data.",
+        "It discusses the use of generative models to represent observed data, including speckle noise and planetary signals.",
+        "A key development is treating the planet’s spectrum as a latent variable rather than assuming it is fixed (e.g., white).",
+        "The analysis includes spectral reconstruction and comparison of real and synthetic planet signals.",
+        "A generative model is applied to Kepler 2.0 data to detect planetary transits, incorporating physics, star variability, and instrument noise."
+      ],
+      "methods_and_technologies": [
+        "Principle Component Analysis (PCA) – used in S4 to analyze speckle background data (unsupervised learning).",
+        "Support Vector Machine (SVM) – used in DS4 for supervised classification"
+      ],
+      "datasets": [
+        "Kepler 2.0 data"
+      ],
+      "limitations": [],
+      "author_reported_gaps": [],
+      "possible_inferred_gaps": [],
+      "uncertainties": []
+    },
+    "S001_chunk_5": {
+      "source_id": "S001",
+      "chunk_id": "S001_chunk_5",
+      "evidence_origin": "AI-generated analysis of extracted source content",
+      "extracted_at": "2026-11-18T14:29:26",
+      "main_findings": [
+        "Generative models are feasible for astronomy problems where signal formation processes are well understood.",
+        "Discriminative models are powerful for tasks requiring input feature learning.",
+        "Machine learning can be used to design coronographs to enhance discriminability between planets and speckles.",
+        "Depth from defocus using coded apertures leverages generative models of natural images to design aperture masks.",
+        "A unified Bayesian generative model is proposed for astronomical imaging, incorporating physics-informed priors and pixel-level uncertainty propagation.",
+        "Planet detection in HR 8799 uses radial motion of speckles and a joint radius-wavelength model to separate planet signals from speckle noise.",
+        "Astronomy and computer vision share concerns with image analysis; generative models from vision can serve as priors for astronomy."
+      ],
+      "methods_and_technologies": [],
+      "datasets": [],
+      "limitations": [],
+      "author_reported_gaps": [],
+      "possible_inferred_gaps": [],
+      "uncertainties": []
+    },
+    "S001_chunk_6": {
+      "source_id": "S001",
+      "chunk_id": "S001_chunk_6",
+      "evidence_origin": "AI-generated analysis of extracted source content",
+      "extracted_at": "2026-11-18T14:30:13",
+      "main_findings": [
+        "The presentation discusses generative versus discriminative modeling in machine learning, with examples from astronomy.",
+        "It covers applications of these models in direct imaging of exoplanets, including the S4 Detect and S4 Discriminative methods.",
+        "A specific case study is presented on Project 1640, using data from the Hale Telescope at Palomar Observatory to detect exoplanets via speckle subtraction.",
+        "The approach involves modeling speckle noise and using residual error analysis to detect planetary signals."
+      ],
+      "methods_and_technologies": [
+        "PCA (Principal Component Analysis) and PPCA (Probabilistic PCA) for dimensionality reduction and modeling",
+        "Online Blind Deconvolution (Hirsch et al., 2011) to remove atmospheric blur",
+        "Use of integral field spectroscopy with monochromatic"
+      ],
+      "datasets": [],
+      "limitations": [],
+      "author_reported_gaps": [],
+      "possible_inferred_gaps": [],
+      "uncertainties": [
+        "The use of integral field spectroscopy with monochromatic is incomplete and lacks context or specification"
+      ]
+    },
+    "S001_chunk_7": {
+      "source_id": "S001",
+      "chunk_id": "S001_chunk_7",
+      "evidence_origin": "AI-generated analysis of extracted source content",
+      "extracted_at": "2026-11-18T14:30:40",
+      "main_findings": [
+        "PCA residuals are presented for HR8799 planets",
+        "Spectra of HR8799 planets are shown",
+        "These are used to analyze planetary signals in astronomical data"
+      ],
+      "methods_and_technologies": [
+        "PCA (Principal Component Analysis) is used to analyze images and generate residuals"
+      ],
+      "datasets": [
+        "HR8799 planets data"
+      ],
+      "limitations": [
+        "The PCA-based method does not exploit the radius-wavelength structure of the data"
+      ],
+      "author_reported_gaps": [],
+      "possible_inferred_gaps": [],
+      "uncertainties": []
+    },
+    "S002_chunk_1": {
+      "source_id": "S002",
+      "chunk_id": "S002_chunk_1",
+      "evidence_origin": "AI-generated analysis of extracted source content",
+      "extracted_at": "2026-11-18T14:31:12",
+      "main_findings": [
+        "AstroML is a Python module designed for machine learning and data mining in astronomy.",
+        "It provides a repository of statistical and machine learning routines, dataset loaders, and example visualizations.",
+        "The project aims to offer a unified, easy-to-use interface to open astronomical datasets.",
+        "It supports both researchers and students in astronomy through accessible, fast Python implementations of common analytical tools.",
+        "The project is linked to a textbook on statistics, data mining, and machine learning in astronomy, with a second edition released in 2019."
+      ],
+      "methods_and_technologies": [
+        "Uses Python libraries: numpy, scipy, scikit-learn, matplotlib, and astropy.",
+        "Implements routines for unsupervised learning (density estimation, clustering, dimensionality reduction), supervised learning (regression, classification), and time series analysis."
+      ],
+      "datasets": [],
+      "limitations": [],
+      "author_reported_gaps": [],
+      "possible_inferred_gaps": [],
+      "uncertainties": []
+    },
+    "S002_chunk_2": {
+      "source_id": "S002",
+      "chunk_id": "S002_chunk_2",
+      "evidence_origin": "AI-generated analysis of extracted source content",
+      "extracted_at": "2026-11-18T14:31:21",
+      "main_findings": [],
+      "methods_and_technologies": [],
+      "datasets": [],
+      "limitations": [],
+      "author_reported_gaps": [],
+      "possible_inferred_gaps": [],
+      "uncertainties": []
+    },
+    "S003_chunk_1": {
+      "source_id": "S003",
+      "chunk_id": "S003_chunk_1",
+      "evidence_origin": "AI-generated analysis of extracted source content",
+      "extracted_at": "2026-11-18T14:31:35",
+      "main_findings": [],
+      "methods_and_technologies": [
+        "scikit-learn",
+        "Astropy",
+        "AstroML"
+      ],
+      "datasets": [],
+      "limitations": [],
+      "author_reported_gaps": [],
+      "possible_inferred_gaps": [],
+      "uncertainties": []
+    },
+    "S003_chunk_2": {
+      "source_id": "S003",
+      "chunk_id": "S003_chunk_2",
+      "evidence_origin": "AI-generated analysis of extracted source content",
+      "extracted_at": "2026-11-18T14:32:18",
+      "main_findings": [
+        "Python has become the de facto language in astronomy, replacing older proprietary tools like IDL.",
+        "Python’s open-source ecosystem (e.g., NumPy, SciPy, Matplotlib, AstroPy, AstroML) enables easier sharing, reproduction, and extension of astronomical research.",
+        "Machine learning techniques are increasingly used in astronomy for tasks such as classifying objects, clustering data, and predicting astrophysical phenomena.",
+        "Distance measurement in astronomy relies on data-processing pipelines implemented in Python, supporting key theories like an expanding universe.",
+        "The Large Synoptic Survey Telescope (LSST) will generate massive datasets, driving the need for scalable data analysis tools and methods."
+      ],
+      "methods_and_technologies": [
+        "Use of NumPy and SciPy for numerical computations.",
+        "Application of scikit-learn for machine learning tasks (e.g., classification"
+      ],
+      "datasets": [],
+      "limitations": [],
+      "author_reported_gaps": [],
+      "possible_inferred_gaps": [],
+      "uncertainties": []
+    },
+    "S003_chunk_3": {
+      "source_id": "S003",
+      "chunk_id": "S003_chunk_3",
+      "evidence_origin": "AI-generated analysis of extracted source content",
+      "extracted_at": "2026-11-18T14:33:06",
+      "main_findings": [
+        "Astronomers use scalable Python-based computational techniques to handle real-time alerts and large catalogs of astronomical objects.",
+        "Bayesian methods, particularly Markov Chain Monte Carlo (MCMC), are increasingly used to analyze uncertain or noisy data in astronomy.",
+        "Forward modeling combined with Bayesian computations improves accuracy in fitting observational data.",
+        "Openness and reproducibility of Python tools enable others to verify and build upon research without reinventing toolchains.",
+        "Interdisciplinary collaboration through institutions like the eScience Institute supports innovation across scientific domains.",
+        "Altair, a Python visualization library based on Vega-Lite, simplifies interactive data exploration.",
+        "A personal anecdote highlights the importance of open-source and reproducible science after an experience where a tool built by an individual was not usable by others."
+      ],
+      "methods_and_technologies": [
+        "Markov Chain Monte Carlo (MCMC)"
+      ],
+      "datasets": [],
+      "limitations": [],
+      "author_reported_gaps": [],
+      "possible_inferred_gaps": [],
+      "uncertainties": []
+    },
+    "S003_chunk_4": {
+      "source_id": "S003",
+      "chunk_id": "S003_chunk_4",
+      "evidence_origin": "AI-generated analysis of extracted source content",
+      "extracted_at": "2026-11-18T14:33:53",
+      "main_findings": [
+        "Python and data science are central to modern astronomy.",
+        "The Large Synoptic Survey Telescope (LSST) is expected to define astronomy in the 2020s, likened to a 10-year movie of the sky.",
+        "Open sharing of code is essential to avoid reinventing the wheel in each study.",
+        "Transparent, reproducible research is enabled by Python’s versatility and open-source nature.",
+        "Combining transparent modeling with powerful tooling allows collaborative scientific advancement."
+      ],
+      "methods_and_technologies": [
+        "Markov Chain Monte Carlo (MCMC) algorithms (e.g., emcee) for Bayesian analysis",
+        "Forward modeling: using known physical models to simulate observations and compare with real data",
+        "Python-based tools and libraries such as NumPy, pandas, scikit-learn, and AstroPy"
+      ],
+      "datasets": [],
+      "limitations": [],
+      "author_reported_gaps": [],
+      "possible_inferred_gaps": [],
+      "uncertainties": []
+    },
+    "S003_chunk_5": {
+      "source_id": "S003",
+      "chunk_id": "S003_chunk_5",
+      "evidence_origin": "AI-generated analysis of extracted source content",
+      "extracted_at": "2026-11-18T14:34:07",
+      "main_findings": [],
+      "methods_and_technologies": [
+        "writing a Sudoku solver"
+      ],
+      "datasets": [],
+      "limitations": [
+        "the general lack of programming experience early in life"
+      ],
+      "author_reported_gaps": [],
+      "possible_inferred_gaps": [],
+      "uncertainties": []
+    },
+    "S005_chunk_1": {
+      "source_id": "S005",
+      "chunk_id": "S005_chunk_1",
+      "evidence_origin": "AI-generated analysis of extracted source content",
+      "extracted_at": "2026-11-18T14:34:27",
+      "main_findings": [],
+      "methods_and_technologies": [
+        "artificial neural networks",
+        "support vector machines"
+      ],
+      "datasets": [],
+      "limitations": [
+        "the potential of data mining is balanced by risks of misuse, such as treating it as a 'black box' without physical insight"
+      ],
+      "author_reported_gaps": [],
+      "possible_inferred_gaps": [],
+      "uncertainties": []
+    },
+    "S005_chunk_2": {
+      "source_id": "S005",
+      "chunk_id": "S005_chunk_2",
+      "evidence_origin": "AI-generated analysis of extracted source content",
+      "extracted_at": "2026-11-18T14:35:05",
+      "main_findings": [
+        "The exponential rise in computing power and digital data has led to a surge in data availability, particularly in astronomy.",
+        "This data deluge has prompted the emergence of data mining as a major scientific endeavor, referred to as the 'fourth paradigm' in science, alongside theory, observation, and computer simulation.",
+        "Data mining, specifically knowledge discovery in databases (KDD), involves using computational methods to identify patterns in digital data and translate them into useful information.",
+        "Machine learning is central to this process, as it enables automated pattern detection and information extraction from large datasets.",
+        "The output of these computational methods must be interpretable and useful to human investigators, leading to human learning."
+      ],
+      "methods_and_technologies": [
+        "Machine learning",
+        "Computational methods",
+        "Knowledge discovery in databases (KDD)"
+      ],
+      "datasets": [],
+      "limitations": [
+        "Scientists generally lack expertise in databases, statistics, or computer hardware, which limits their appreciation of data mining’s full potential."
+      ],
+      "author_reported_gaps": [],
+      "possible_inferred_gaps": [],
+      "uncertainties": [
+        "The review aims to demonstrate the utility"
+      ]
+    },
+    "S005_chunk_3": {
+      "source_id": "S005",
+      "chunk_id": "S005_chunk_3",
+      "evidence_origin": "AI-generated analysis of extracted source content",
+      "extracted_at": "2026-11-18T14:35:43",
+      "main_findings": [
+        "Data mining and machine learning are tools to support scientific discovery in astronomy, not a replacement for physical understanding.",
+        "A structured process from raw data input to result visualization is outlined, with a clear algorithmic structure in §2 and an astrophysical focus in §3.",
+        "The integration of data mining with astronomy is intended to generate new insights for both data mining and astronomy experts.",
+        "Future directions for data mining in astronomy are discussed, including near-term developments in both methodology and application."
+      ],
+      "methods_and_technologies": [
+        "Data mining algorithms",
+        "Well-known and well-tested data mining algorithms"
+      ],
+      "datasets": [],
+      "limitations": [],
+      "author_reported_gaps": [],
+      "possible_inferred_gaps": [],
+      "uncertainties": []
+    },
+    "S005_chunk_4": {
+      "source_id": "S005",
+      "chunk_id": "S005_chunk_4",
+      "evidence_origin": "AI-generated analysis of extracted source content",
+      "extracted_at": "2026-11-18T14:36:03",
+      "main_findings": [
+        "For many algorithms, new data can be trivially incorporated."
+      ],
+      "methods_and_technologies": [
+        "Unsupervised clustering algorithms",
+        "Pattern recognition techniques",
+        "Knowledge Discovery in Databases (KDD) framework"
+      ],
+      "datasets": [],
+      "limitations": [],
+      "author_reported_gaps": [],
+      "possible_inferred_gaps": [],
+      "uncertainties": []
+    },
+    "S005_chunk_5": {
+      "source_id": "S005",
+      "chunk_id": "S005_chunk_5",
+      "evidence_origin": "AI-generated analysis of extracted source content",
+      "extracted_at": "2026-11-18T14:36:44",
+      "main_findings": [
+        "Data collection in astronomy involves acquiring new observations, querying existing databases, and performing cross-matching or data fusion.",
+        "Cross-matching is commonly used to combine multiwavelength data (e.g., gamma ray to radio) using object positions with astrometric tolerance (typically a few arcseconds).",
+        "Data preprocessing may occur during data collection (e.g., sample cuts in queries) and includes steps to make data meaningful or transform it for specific algorithms.",
+        "Preprocessing is problem-dependent and critically influences algorithm performance.",
+        "The Virtual Observatory (VO) aims to simplify and streamline data collection, especially through future web services that support large-scale, heterogeneous cross-matching."
+      ],
+      "methods_and_technologies": [
+        "Cross-matching using positional data with astrometric tolerance (a few arcseconds)",
+        "Querying existing databases based on scientific questions"
+      ],
+      "datasets": [],
+      "limitations": [],
+      "author_reported_gaps": [],
+      "possible_inferred_gaps": [],
+      "uncertainties": []
+    },
+    "S005_chunk_7": {
+      "source_id": "S005",
+      "chunk_id": "S005_chunk_7",
+      "evidence_origin": "AI-generated analysis of extracted source content",
+      "extracted_at": "2026-11-18T14:38:35",
+      "main_findings": [
+        "Missing values in astronomical data may occur due to hardware issues (e.g., bad camera pixels), cosmic ray hits, or unknown reasons.",
+        "Missing values can interfere with some algorithms, requiring either removal of data objects or interpolation.",
+        "Interpolation is problem-dependent and may not always be appropriate.",
+        "Data may contain valid values outside the desired analysis range, necessitating sampling or outlier handling.",
+        "Outliers may be included, downweighted, or excluded based on their extremity (e.g., number of standard deviations).",
+        "Random subsampling may be used to generate smaller datasets.",
+        "Data normalization and calibration are essential to improve numerical conditioning of machine learning algorithms.",
+        "Attribute selection is critical, as many attributes are available but not all are necessary, and using all may degrade performance."
+      ],
+      "methods_and_technologies": [
+        "Interpolation"
+      ],
+      "datasets": [],
+      "limitations": [],
+      "author_reported_gaps": [],
+      "possible_inferred_gaps": [],
+      "uncertainties": []
+    },
+    "S005_chunk_8": {
+      "source_id": "S005",
+      "chunk_id": "S005_chunk_8",
+      "evidence_origin": "AI-generated analysis of extracted source content",
+      "extracted_at": "2026-11-18T14:39:15",
+      "main_findings": [
+        "High-dimensional data in astronomy leads to sparse or empty regions (voids), making generalization difficult.",
+        "Dimension reduction is necessary to retain useful information while reducing the number of attributes.",
+        "Dimension reduction is conceptually similar to classification, where many inputs are reduced to fewer outputs.",
+        "Several dimension reduction techniques are discussed, including principal component analysis (PCA), forward selection, backward elimination, genetic algorithms, autoencoders, kernel methods, and epsilon-approximate nearest neighbor search."
+      ],
+      "methods_and_technologies": [
+        "Principal Component Analysis (PCA)",
+        "Forward selection",
+        "Backward elimination",
+        "Genetic algorithms",
+        "Autoencoders",
+        "Kernel methods",
+        "Epsilon-approximate nearest neighbor search"
+      ],
+      "datasets": [],
+      "limitations": [],
+      "author_reported_gaps": [],
+      "possible_inferred_gaps": [],
+      "uncertainties": [
+        "Binary"
+      ]
+    },
+    "S005_chunk_9": {
+      "source_id": "S005",
+      "chunk_id": "S005_chunk_9",
+      "evidence_origin": "AI-generated analysis of extracted source content",
+      "extracted_at": "2026-11-18T14:39:42",
+      "main_findings": [],
+      "methods_and_technologies": [
+        "Information theory",
+        "Fisher Matrix",
+        "Independent Component Analysis",
+        "Wavelet transforms",
+        "Classification algorithms",
+        "Dimension reduction techniques",
+        "Supervised and unsupervised machine learning methods"
+      ],
+      "datasets": [],
+      "limitations": [
+        "The curse of dimensionality is expected to worsen as more multiwavelength datasets become available for cross-matching"
+      ],
+      "author_reported_gaps": [],
+      "possible_inferred_gaps": [],
+      "uncertainties": []
+    },
+    "S006_chunk_1": {
+      "source_id": "S006",
+      "chunk_id": "S006_chunk_1",
+      "evidence_origin": "AI-generated analysis of extracted source content",
+      "extracted_at": "2026-11-18T14:40:31",
+      "main_findings": [
+        "The increasing volume of astronomical data has led to a growing reliance on machine learning (ML) methods for data processing, signal detection, and classification.",
+        "There is historical skepticism in the astronomy and physics communities about whether machine learning methods can truly uncover physical laws, rather than just provide useful but opaque results.",
+        "The current use of ML in astronomy mirrors past computational paradigm shifts in the field.",
+        "Machine learning is now being challenged by new methodologies that suggest it can contribute to understanding physical principles, not just provide black-box predictions.",
+        "Designing effective datasets for ML in astronomy requires addressing challenges at different scales to test various use cases of analysis methods."
+      ],
+      "methods_and_technologies": [
+        "Machine learning methods are used for detection and classification of astronomical signals and model inference from signals.",
+        "The text references the use of datasets to test different parts"
+      ],
+      "datasets": [],
+      "limitations": [],
+      "author_reported_gaps": [],
+      "possible_inferred_gaps": [],
+      "uncertainties": []
+    },
+    "S006_chunk_2": {
+      "source_id": "S006",
+      "chunk_id": "S006_chunk_2",
+      "evidence_origin": "AI-generated analysis of extracted source content",
+      "extracted_at": "2026-11-18T14:41:11",
+      "main_findings": [
+        "There was real skepticism at the time of development regarding the validity of N-body simulations due to divergence between groups using different prescriptions and rapid divergence with small changes in initial conditions."
+      ],
+      "methods_and_technologies": [
+        "N-body simulations are mentioned as a method used to study gravitational systems.",
+        "Early studies involved varying accuracy and microscopic initial conditions to search for stable quantities.",
+        "Statistical studies are referenced as a proposed method to assess reproducibility and stability in simulations."
+      ],
+      "datasets": [],
+      "limitations": [],
+      "author_reported_gaps": [],
+      "possible_inferred_gaps": [],
+      "uncertainties": [
+        "The skepticism regarding validity of N-body simulations is attributed to divergence between groups using different prescriptions and rapid divergence with small changes in initial conditions, but the extent or nature of this divergence is not specified."
+      ]
+    },
+    "S006_chunk_3": {
+      "source_id": "S006",
+      "chunk_id": "S006_chunk_3",
+      "evidence_origin": "AI-generated analysis of extracted source content",
+      "extracted_at": "2026-11-18T14:41:26",
+      "main_findings": [],
+      "methods_and_technologies": [
+        "Principal component analysis (PCA)",
+        "Deep learning, neural networks, and diffusion methods",
+        "N-body simulation methods"
+      ],
+      "datasets": [],
+      "limitations": [],
+      "author_reported_gaps": [],
+      "possible_inferred_gaps": [],
+      "uncertainties": [
+        "The sensitivity of N"
+      ]
+    },
+    "S006_chunk_4": {
+      "source_id": "S006",
+      "chunk_id": "S006_chunk_4",
+      "evidence_origin": "AI-generated analysis of extracted source content",
+      "extracted_at": "2026-11-18T14:42:17",
+      "main_findings": [
+        "Fast radio bursts (FRBs) and gravitational wave signals are key astronomical phenomena being studied for their origin and physical mechanisms.",
+        "Detection and classification of these signals involve distinguishing them from background noise and instrumental artifacts.",
+        "Supervised and unsupervised machine learning methods are used to classify astronomical signals, particularly FRBs and gravitational wave events.",
+        "Classification in gravitational wave data is based on models of signal distances.",
+        "Assigning astrophysical hosts to FRBs and gravitational wave sources is complicated by poor spatial localization and galactic density."
+      ],
+      "methods_and_technologies": [
+        "Supervised machine learning approaches use labeled real or simulated data to train algorithms to recognize features in time-varying electromagnetic flux.",
+        "Unsupervised methods are used for FRB classification to distinguish them from radio frequency interference (RFI).",
+        "Classification of gravitational wave signals"
+      ],
+      "datasets": [],
+      "limitations": [],
+      "author_reported_gaps": [],
+      "possible_inferred_gaps": [],
+      "uncertainties": []
+    },
+    "S006_chunk_5": {
+      "source_id": "S006",
+      "chunk_id": "S006_chunk_5",
+      "evidence_origin": "AI-generated analysis of extracted source content",
+      "extracted_at": "2026-11-18T14:43:06",
+      "main_findings": [
+        "Time constraints in classification tasks (e.g., gamma ray and X-ray telescopes) require rapid detection and alerting for \"target-of-opportunity\" observations.",
+        "In optical astronomy, detection is often triggered by brightness thresholds, followed by analysis of archival (\"forced\") photometric data to determine pre-outburst conditions.",
+        "Machine learning (ML) is used not only for detection/classification but also for inference to understand underlying physical processes in astronomy.",
+        "Bayesian Neural Networks (BNNs) are used to perform inference in ML models, providing uncertainty estimates and more interpretable, transferable model outputs.",
+        "BNNs have seen increased application in astrophysics for modeling galaxy formation, morphology, supernovae, and large-scale structure clustering."
+      ],
+      "methods_and_technologies": [
+        "Time-series classification and clustering (in optical astronomy)"
+      ],
+      "datasets": [],
+      "limitations": [],
+      "author_reported_gaps": [],
+      "possible_inferred_gaps": [],
+      "uncertainties": []
+    },
+    "S006_chunk_6": {
+      "source_id": "S006",
+      "chunk_id": "S006_chunk_6",
+      "evidence_origin": "AI-generated analysis of extracted source content",
+      "extracted_at": "2026-11-18T14:43:57",
+      "main_findings": [
+        "Machine learning in astronomy is often criticized for being a 'black box' with limited transparency or physical interpretability.",
+        "A key distinction is made between the explainability of a model and its interpretability, with interpretability being more important in physics and astronomy as models should illuminate physical processes.",
+        "Some astronomers use off-the-shelf ML tools for speed and robustness in analysis pipelines, often with minimal justification or explanation of model choices.",
+        "This 'means-to-an-end' approach may reinforce the perception that ML lacks scientific value or physical insight.",
+        "Post-hoc interpretability methods have been introduced to help understand ML model decisions after training."
+      ],
+      "methods_and_technologies": [
+        "Grad-CAM (Gradient-weight"
+      ],
+      "datasets": [],
+      "limitations": [],
+      "author_reported_gaps": [],
+      "possible_inferred_gaps": [],
+      "uncertainties": [
+        "Grad-CAM (Gradient-weight"
+      ]
+    },
+    "S006_chunk_7": {
+      "source_id": "S006",
+      "chunk_id": "S006_chunk_7",
+      "evidence_origin": "AI-generated analysis of extracted source content",
+      "extracted_at": "2026-11-18T14:44:45",
+      "main_findings": [
+        "The extract discusses methods to interpret what machine learning models are learning from astronomical data, particularly in image classification.",
+        "It highlights the use of Grad-CAM to visualize which image regions contribute most to a classification decision.",
+        "It references applications of these methods in astronomy, such as distinguishing astrophysical gravitational wave signals from instrumental glitches.",
+        "It mentions attempts to use machine learning to directly infer physical laws from data, with caveats about potential biases in fitness functions.",
+        "It introduces physics-informed machine learning as a broader approach that incorporates physical laws into model design."
+      ],
+      "methods_and_technologies": [
+        "Gradient-weighted Class Activation Mapping (Grad-CAM)",
+        "Class Activation Mapping (CAM)",
+        "Convolutional Neural Networks (CNNs) with global average pooling",
+        "Regressive algorithms for inferring physical laws",
+        "Physics-informed"
+      ],
+      "datasets": [],
+      "limitations": [],
+      "author_reported_gaps": [],
+      "possible_inferred_gaps": [],
+      "uncertainties": []
+    },
+    "S006_chunk_8": {
+      "source_id": "S006",
+      "chunk_id": "S006_chunk_8",
+      "evidence_origin": "AI-generated analysis of extracted source content",
+      "extracted_at": "2026-11-18T14:45:28",
+      "main_findings": [
+        "Physics-aware or physics-based machine learning approaches involve incorporating physical laws directly into the algorithm as prior information, rather than using generic machine learning models with no prior assumptions.",
+        "Such methods can improve efficiency, robustness, and reduce dependence on training data, potentially enabling unsupervised learning.",
+        "These approaches are particularly relevant for problems in nonlinear dynamics and fluid mechanics in physics and astronomy.",
+        "Machine learning methods now offer capabilities to provide uncertainty estimates for model parameters, addressing a historical criticism of 'black box' models.",
+        "There is growing interest in comparing different uncertainty quantification (UQ) methods in physics and astronomy.",
+        "Despite rapid development of ML methods, the astronomical community’s adoption of these techniques remains slow, with evolving standards."
+      ],
+      "methods_and_technologies": [
+        "Physics-informed machine learning (PIML): integrating physical laws"
+      ],
+      "datasets": [],
+      "limitations": [],
+      "author_reported_gaps": [],
+      "possible_inferred_gaps": [],
+      "uncertainties": []
+    },
+    "S006_chunk_9": {
+      "source_id": "S006",
+      "chunk_id": "S006_chunk_9",
+      "evidence_origin": "AI-generated analysis of extracted source content",
+      "extracted_at": "2026-11-18T14:45:51",
+      "main_findings": [
+        "The use of machine learning in astronomy is supported by regular research planning efforts that address methodological challenges.",
+        "There is a recognized need for machine learning methods that provide uncertainty estimates and are interpretable and physically motivated."
+      ],
+      "methods_and_technologies": [
+        "Machine learning algorithms are used to process large astronomical datasets",
+        "Data are often \"compressed\" onto a smaller set of features, axes, or vectors of information"
+      ],
+      "datasets": [],
+      "limitations": [
+        "Data compression"
+      ],
+      "author_reported_gaps": [],
+      "possible_inferred_gaps": [],
+      "uncertainties": []
+    },
+    "S005_chunk_6": {
+      "source_id": "S005",
+      "chunk_id": "S005_chunk_6",
+      "evidence_origin": "AI-generated analysis of extracted source content",
+      "extracted_at": "2026-11-18T14:56:16",
+      "main_findings": [
+        "Object properties in astronomy data can be numerical or categorical (e.g., 'star', 'galaxy').",
+        "Data can be transformed between numerical and categorical forms.",
+        "Categorical-to-numerical transformation uses scalarization (e.g., labeling 'star', 'galaxy', 'quasar' as [1,0,0], [0,1,0], [0,0,1]).",
+        "Caution is needed when assigning numerical labels to categories, as some algorithms (e.g., decision trees with multiple outputs) may interpret intermediate labels incorrectly.",
+        "Numerical data can be made categorical via binning, which may introduce numerical issues.",
+        "Transformations such as magnitude differencing (to create colors) can introduce issues like division by zero or loss of accuracy.",
+        "Data may contain bad values (e.g., -99)"
+      ],
+      "methods_and_technologies": [
+        "Scalarization",
+        "Binning",
+        "Magnitude differencing"
+      ],
+      "datasets": [],
+      "limitations": [
+        "Caution is needed when assigning numerical labels to categories, as some algorithms (e.g., decision trees with multiple outputs) may interpret intermediate labels incorrectly.",
+        "Transformations such as magnitude differencing (to create colors) can introduce issues like division by zero or loss of accuracy.",
+        "Data may contain bad values (e.g., -99)"
+      ],
+      "author_reported_gaps": [],
+      "possible_inferred_gaps": [],
+      "uncertainties": [
+        "Caution is needed when assigning numerical labels to categories, as some algorithms (e.g., decision trees with multiple outputs) may interpret intermediate labels incorrectly.",
+        "Transformations such as magnitude differencing (to create colors) can introduce issues like division by zero or loss of accuracy.",
+        "Data may contain bad values (e.g., -99)"
+      ]
+    }
+  }
+}
